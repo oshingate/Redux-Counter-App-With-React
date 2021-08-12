@@ -2,12 +2,12 @@ import { connect } from 'react-redux';
 
 const ButtonSec = (props) => {
   return (
-    <section class='sec-padding button-sec'>
+    <section className='sec-padding button-sec'>
       <div>
-        <ul class='flex center'>
+        <ul className='flex center'>
           <li>
             <button
-              class='btn-pri'
+              className='btn-pri'
               id='inc'
               onClick={() => {
                 props.dispatch({ type: 'increment' });
@@ -18,7 +18,7 @@ const ButtonSec = (props) => {
           </li>
           <li>
             <button
-              class='btn-pri'
+              className='btn-pri'
               id='dec'
               onClick={() => {
                 props.dispatch({ type: 'decrement' });
@@ -29,7 +29,7 @@ const ButtonSec = (props) => {
           </li>
           <li>
             <button
-              class='btn-pri'
+              className='btn-pri'
               id='reset'
               onClick={() => {
                 props.dispatch({ type: 'reset' });

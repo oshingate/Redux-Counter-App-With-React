@@ -8,8 +8,12 @@ function reducer(state = { count: 0, step: 5 }, action) {
     case 'decrement':
       return { ...state, count: state.count - state.step };
 
+    case 'changeStep':
+      return { ...state, step: action.payload };
+
     case 'reset':
       return { count: 0, step: 5 };
+
     default:
       return state;
   }

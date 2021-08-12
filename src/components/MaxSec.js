@@ -1,16 +1,16 @@
 const MaxSec = () => {
   return (
-    <div class='each-div'>
-      <h2 class='text-center max-display'>Max</h2>
-      <ul class='flex center'>
+    <div className='each-div'>
+      <h2 className='text-center max-display'>Max</h2>
+      <ul className='flex center'>
         <li>
-          <button class='btn-ter'>50</button>
+          <button className='btn-ter'>50</button>
         </li>
         <li>
-          <button class='btn-ter'>100</button>
+          <button className='btn-ter'>100</button>
         </li>
         <li>
-          <button class='btn-ter'>150</button>
+          <button className='btn-ter'>150</button>
         </li>
       </ul>
     </div>
