@@ -7,13 +7,13 @@ const Main = () => {
   return (
     <main>
       <Counter />
-      {/* <section class='step-sec'>
-        <div class='flex center'>
+      <section className='step-sec'>
+        <div className='flex center'>
           <StepSec />
 
-          <MaxSec />
+          {/* <MaxSec /> */}
         </div>
-      </section> */}
+      </section>
       <ButtonSec />
     </main>
   );
