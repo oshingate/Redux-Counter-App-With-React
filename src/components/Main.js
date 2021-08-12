@@ -11,7 +11,7 @@ const Main = () => {
         <div className='flex center'>
           <StepSec />
 
-          {/* <MaxSec /> */}
+          <MaxSec />
         </div>
       </section>
       <ButtonSec />
