@@ -1,18 +1,29 @@
 import { createStore } from 'redux';
 
-function reducer(state = { count: 0, step: 5 }, action) {
+function reducer(state = { count: 0, step: 5, max: 50 }, action) {
   switch (action.type) {
     case 'increment':
-      return { ...state, count: state.count + state.step };
+      if (state.count + state.step <= state.max) {
+        return { ...state, count: state.count + state.step };
+      } else {
+        return { ...state };
+      }
 
     case 'decrement':
-      return { ...state, count: state.count - state.step };
+      if (state.count - state.step >= 0) {
+        return { ...state, count: state.count - state.step };
+      } else {
+        return { ...state };
+      }
 
     case 'changeStep':
       return { ...state, step: action.payload };
 
+    case 'updateMax':
+      return { ...state, max: action.payload };
+
     case 'reset':
-      return { count: 0, step: 5 };
+      return { count: 0, step: 5, max: 50 };
 
     default:
       return state;
